@@ -663,7 +663,7 @@
   "chain": "SCAI",
   "icon": "scaiIcon",
   "rpc": ["https://mainnet-rpc.scai.network"],
-  "faucets": ["https://faucet.securechain.ai"],
+  "faucets": [],
   "nativeCurrency": {
     "name": "SecureChain",
     "symbol": "SCAI",
@@ -3952,7 +3952,7 @@
   "chain": "EGON",
   "icon": "egonicon",
   "rpc": ["https://rpc.egonscan.com"],
-  "faucets": ["https://faucet.egonscan.com"],
+  "faucets": [],
   "nativeCurrency": {
     "name": "EgonCoin",
     "symbol": "EGON",
@@ -4677,6 +4677,62 @@
     "url": "https://explorer-testnet.theconsta.com",
     "standard": "EIP3091"
   }]
+}, {
+  "name": "ZKAmoeba Testnet",
+  "chain": "FIL",
+  "rpc": ["https://rpc.testnet.zkamoeba.com:4050/", "https://rpc1.testnet.zkamoeba.com:4050/"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "filecoin",
+    "symbol": "FIL",
+    "decimals": 18
+  },
+  "infoURL": "https://testnet.zkamoeba.com",
+  "shortName": "zkamoeba-test",
+  "chainId": 380,
+  "networkId": 380,
+  "icon": "zkamoeba-micro",
+  "explorers": [{
+    "name": "ZKAmoeba Test Explorer",
+    "url": "https://testnetexplorer.zkamoeba.com",
+    "icon": "zkamoeba-micro",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-314",
+    "bridges": [{
+      "url": "https://testnet.zkamoeba.com/en/bridge"
+    }]
+  }
+}, {
+  "name": "ZKAmoeba Mainnet",
+  "chain": "FIL",
+  "rpc": ["https://rpc.mainnet.zkamoeba.com/rpc"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "filecoin",
+    "symbol": "FIL",
+    "decimals": 18
+  },
+  "infoURL": "https://www.zkamoeba.com",
+  "shortName": "zkamoeba",
+  "chainId": 381,
+  "networkId": 381,
+  "icon": "zkamoeba-micro",
+  "explorers": [{
+    "name": "ZKAmoeba Explorer",
+    "url": "https://explorer.zkamoeba.com",
+    "icon": "zkamoeba-micro",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-314",
+    "bridges": [{
+      "url": "https://www.zkamoeba.com/en/bridge"
+    }]
+  }
 }, {
   "name": "Lisinski",
   "chain": "CRO",
@@ -5527,6 +5583,26 @@
     "url": "https://vne.network/rose",
     "standard": "none",
     "icon": "vine"
+  }]
+}, {
+  "name": "EIOB Mainnet",
+  "chain": "EIOB",
+  "icon": "eiob",
+  "rpc": ["https://rpc.eiob.xyz"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "EIOB",
+    "symbol": "EIOB",
+    "decimals": 18
+  },
+  "infoURL": "",
+  "shortName": "eiob",
+  "chainId": 612,
+  "networkId": 612,
+  "explorers": [{
+    "name": "EIOB Explorer",
+    "url": "https://explorer.eiob.xyz",
+    "standard": "none"
   }]
 }, {
   "name": "Graphlinq Blockchain Mainnet",
@@ -9826,14 +9902,14 @@
   "chain": "NetZ",
   "icon": "mainnetz",
   "rpc": ["https://mainnet-rpc.mainnetz.io", "https://eu-rpc.mainnetz.io"],
-  "faucets": ["https://faucet.mainnetz.io"],
+  "faucets": [],
   "nativeCurrency": {
-    "name": "mainnetz",
+    "name": "MainnetZ",
     "symbol": "NetZ",
     "decimals": 18
   },
   "infoURL": "https://mainnetz.io",
-  "shortName": "NetZm",
+  "shortName": "netz",
   "chainId": 2016,
   "networkId": 2016,
   "explorers": [{
@@ -14173,6 +14249,27 @@
     "standard": "none"
   }]
 }, {
+  "name": "Kinto Mainnet",
+  "chain": "Kinto Mainnet",
+  "rpc": ["https://rpc.kinto.xyz/http", "https://kinto-mainnet.calderachain.xyz/http"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "infoURL": "https://kinto.xyz",
+  "shortName": "kintoMainnet",
+  "chainId": 7887,
+  "networkId": 7887,
+  "icon": "kinto",
+  "explorers": [{
+    "name": "Kinto Explorer",
+    "url": "https://explorer.kinto.xyz",
+    "icon": "kinto",
+    "standard": "EIP3091"
+  }]
+}, {
   "name": "ARDENIUM Athena",
   "chain": "ATHENA",
   "rpc": ["https://rpc-athena.ardescan.com/"],
@@ -17044,6 +17141,29 @@
     "standard": "EIP3091"
   }]
 }, {
+  "name": "Jono11 Subnet",
+  "chain": "JONO11",
+  "icon": "jono11",
+  "rpc": ["https://subnets.avax.network/jono11/testnet/rpc"],
+  "features": [{
+    "name": "EIP1559"
+  }],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Jono11 Token",
+    "symbol": "JONO",
+    "decimals": 18
+  },
+  "infoURL": "",
+  "shortName": "jono11",
+  "chainId": 20765,
+  "networkId": 20765,
+  "explorers": [{
+    "name": "JONO11 Explorer",
+    "url": "https://subnets-test.avax.network/jono11",
+    "standard": "EIP3091"
+  }]
+}, {
   "name": "CENNZnet Azalea",
   "chain": "CENNZnet",
   "rpc": ["https://cennznet.unfrastructure.io/public"],
@@ -17342,6 +17462,26 @@
   "shortName": "mintme",
   "chainId": 24734,
   "networkId": 37480
+}, {
+  "name": "LiquidLayer Mainnet",
+  "chain": "LiquidLayer",
+  "icon": "lila",
+  "rpc": ["https://mainnet.liquidlayer.network"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "LiquidLayer",
+    "symbol": "LILA",
+    "decimals": 18
+  },
+  "infoURL": "https://scan.liquidlayer.network",
+  "shortName": "LILA",
+  "chainId": 25186,
+  "networkId": 25186,
+  "explorers": [{
+    "name": "LiquidLayer Mainnet Explorer",
+    "url": "https://scan.liquidlayer.network",
+    "standard": "EIP3091"
+  }]
 }, {
   "name": "Hammer Chain Mainnet",
   "chain": "HammerChain",
@@ -17653,6 +17793,28 @@
   "networkId": 31415,
   "slip44": 1,
   "explorers": []
+}, {
+  "name": "W3Gamez Holesky Testnet",
+  "chain": "ETH",
+  "rpc": ["https://rpc-holesky.w3gamez.network"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "W3Gamez Testnet Ether",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "infoURL": "https://web3games.com/",
+  "shortName": "w3gamez",
+  "chainId": 32001,
+  "networkId": 32001,
+  "slip44": 1,
+  "icon": "w3gamez",
+  "explorers": [{
+    "name": "W3Gamez Holesky Explorer",
+    "url": "https://w3gamez-holesky.web3games.com",
+    "icon": "web3games",
+    "standard": "EIP3091"
+  }]
 }, {
   "name": "Bitgert Mainnet",
   "chain": "Brise",
@@ -20271,6 +20433,26 @@
     "url": "https://explorer.lambda.top",
     "standard": "EIP3091",
     "icon": "lambda"
+  }]
+}, {
+  "name": "LiquidLayer Testnet",
+  "chain": "LILA",
+  "icon": "lila",
+  "rpc": ["https://testnet.liquidlayer.network"],
+  "faucets": ["https://claim.liquidlayer.network"],
+  "nativeCurrency": {
+    "name": "LiquidLayer Testnet",
+    "symbol": "LILA",
+    "decimals": 18
+  },
+  "infoURL": "https://testnet-scan.liquidlayer.network",
+  "shortName": "tLILA",
+  "chainId": 93572,
+  "networkId": 93572,
+  "explorers": [{
+    "name": "LiquidLayer Testnet Explorer",
+    "url": "https://testnet-scan.liquidlayer.network",
+    "standard": "EIP3091"
   }]
 }, {
   "name": "Mantis Testnet (Hexapod)",
@@ -24252,7 +24434,7 @@
   "name": "Kanazawa",
   "title": "Meld Testnet Kanazawa",
   "chain": "Kanazawa",
-  "rpc": ["https://subnets.avax.network/meld/testnet/rpc"],
+  "rpc": ["https://testnet-rpc.meld.com"],
   "faucets": [],
   "features": [],
   "nativeCurrency": {
@@ -24267,6 +24449,11 @@
   "networkId": 222000222,
   "slip44": 1,
   "explorers": [{
+    "name": "explorer",
+    "url": "https://testnet.meldscan.io",
+    "icon": "meld",
+    "standard": "EIP3091"
+  }, {
     "name": "explorer",
     "url": "https://subnets-test.avax.network/meld",
     "icon": "meld",
@@ -24391,7 +24578,7 @@
   "name": "Meld",
   "title": "Meld Mainnet",
   "chain": "MELD",
-  "rpc": ["https://subnets.avax.network/meld/mainnet/rpc"],
+  "rpc": ["https://rpc-1.meld.com"],
   "faucets": [],
   "features": [],
   "nativeCurrency": {
@@ -24405,6 +24592,11 @@
   "chainId": 333000333,
   "networkId": 333000333,
   "explorers": [{
+    "name": "explorer",
+    "url": "https://meldscan.io",
+    "icon": "meld",
+    "standard": "EIP3091"
+  }, {
     "name": "explorer",
     "url": "https://subnets.avax.network/meld",
     "icon": "meld",
